@@ -1,11 +1,11 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-hole
-Version:	0.5.1
+Version:	0.7.0
 Release:	1
 Summary:	Python API for interacting with *hole.
 License:	MIT
 URL:		https://github.com/fabaff/python-hole
-Source0:	https://files.pythonhosted.org/packages/7b/f2/1de945b05165193ca4f0f1466f97151a5c434b07c9a6b08f44927f29ad82/hole-0.5.1.tar.gz
+Source0:	https://files.pythonhosted.org/packages/48/30/b9c8207e4fab8f6b26ff903066ec2a150fdb373335fc71d779b06ef522ca/hole-0.7.0.tar.gz
 BuildArch:	noarch
 
 
@@ -27,7 +27,7 @@ Provides:	python3-hole-doc
 Python API for interacting with a *hole instance.
 
 %prep
-%autosetup -n hole-0.5.1
+%autosetup -n hole-0.7.0
 
 %build
 %py3_build
@@ -67,5 +67,8 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Wed Sep 21 2022 hkgy <kaguyahatu@outlook.com> - 0.7.0-1
+- Update to 0.7.0
+
 * Wed Sep 01 2021 Python_Bot <Python_Bot@openeuler.org> - 0.5.1-1
 - Package Init
